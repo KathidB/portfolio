@@ -240,16 +240,12 @@ body {
       transition: transform 0.3s;
 
       &--imgone {
-        position: absolute;
-        top: -145px;
-        // top: -178px;
-        width: 60%;
-        z-index: 1;
+        position: absolute;       
+        top: -106px;         
       }
       &--imgtwo {
         width: 100%;
         height: 60%;
-
         img {
           width: 100%;
           height: 100%;

@@ -1,7 +1,16 @@
+// wyłącza na mobile animacje od AOS
 AOS.init({ disable: "mobile" });
+/////////////////////////////////////////////////////////////
+// hamburger menu
+/////////////////////////////////////////////////////////////
 const hamburgerBtn = document.querySelector(".hamburger");
 const hamMenu = document.querySelector(".nav-menu-ham");
 const menuNav = document.querySelector(".nav");
+//counter box
+const counterBox = document.querySelector(".counter-box");
+const counterItems = document.querySelectorAll(".counter");
+const counterPercent = document.querySelector(".counter-procent");
+const counterSpan = document.querySelector(".counter span");
 
 const menuActivation = () => {
   hamburgerBtn.classList.toggle("active");
@@ -18,8 +27,50 @@ document.querySelectorAll(".nav-menu-ham__item").forEach((el) => {
   });
 });
 
-//proste nadanie cienia na menu w trakcie przesuwania strony.
+/////////////////////////////////////////////////////////////
+//  funkcja counter box
+/////////////////////////////////////////////////////////////
+const options = {
+  // dzieki tej wartości odliczanie nie zaczyna sie od razu na ikonkach
+  //gdy scrollujemy w dól, a o 250px niżej.
+  rootMargin: "-150px",
+};
 
+const startCounter = (entry) => {
+  //entry - sprawdzamy czy doscrollowalismy do countera.
+  if (entry[0].isIntersecting) {
+    counterItems.forEach((counter) => {
+      const updateCounter = () => {
+        //do zmiennej finalnumber przypisujemy docelowa liczbe z countera w html
+        const finalNumber = counter.getAttribute("data-number");
+        //domyslnie mamy wpisane zero w stringu - dzieki temu bedzie to liczba.
+        const value = parseInt(counter.textContent);
+        //predkosc obliczania - liczba nie moze być wyższa niż liczba podana
+        //w data-number w html!
+        const speed = finalNumber / 50;
+        if (value < finalNumber) {
+          counter.textContent = `${Math.floor(value + speed)} `;
+          // counterPercent = counter.textContent.value + "%";
+          //wartość zmienia predkosc wykonywana się countera
+          setTimeout(updateCounter, 10);
+        } else {
+          counter.textContent = finalNumber;
+        }
+      };
+
+      updateCounter();
+    });
+  }
+};
+
+// parametry to funckja startcounter i obiekt z opcjami options
+const observer = new IntersectionObserver(startCounter, options);
+//observer obserwuje counter box
+observer.observe(counterBox);
+
+/////////////////////////////////////////////////////////////
+// funkcja nadanie cienia na menu w trakcie przesuwania strony.
+/////////////////////////////////////////////////////////////
 window.onscroll = () => {
   if (window.scrollY >= 100) {
     menuNav.classList.add("nav-bg");
@@ -27,7 +78,3 @@ window.onscroll = () => {
     menuNav.classList.remove("nav-bg");
   }
 };
-
-
-
-

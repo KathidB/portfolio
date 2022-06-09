@@ -69,7 +69,6 @@ body {
     .nav-menu {
       display: flex;
       list-style: none;
-
       &__item {
         padding: 0 10px;
         font-size: 2rem;
@@ -235,18 +234,22 @@ body {
       height: 390px;
       flex-direction: column;
       align-items: center;
+      justify-content: space-between;
       border-radius: 6px;
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.623);
       transition: transform 0.3s;
+
       &--imgone {
         position: absolute;
         top: -145px;
+        // top: -178px;
         width: 60%;
         z-index: 1;
       }
       &--imgtwo {
         width: 100%;
         height: 60%;
+
         img {
           width: 100%;
           height: 100%;
@@ -292,7 +295,7 @@ body {
       }
     }
     &__item:hover {
-      transform: scale(1.15);
+      transform: translateY(20px);
     }
   }
 }
@@ -376,7 +379,7 @@ body {
     .team-members {
       width: 100%;
       display: inline-flex;
-      justify-content: center;
+      justify-content: space-evenly;
       scroll-snap-align: start;
       flex: 0 0 100%;
       flex-wrap: wrap;
@@ -503,6 +506,36 @@ footer {
   padding: 10px;
   text-align: center;
   font-size: 1.5em;
+}
+
+///////////////////////////////////////
+//kod odpowiedzialny za counter box
+
+.counter-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  // flex-wrap: wrap;
+  margin: 6rem 0;
+  .counter-item {
+    font-size: 2.5rem;
+    margin: 1em;
+    width: 200px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.76);
+    .counter {
+      margin: 0.3em 0;
+      font-size: 4rem;
+    }
+    .counter-procent::after {
+      content: " %";
+    }
+    .counter-desc {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+    }
+  }
 }
 
 ///////////////////MEDIAQUERIES///////////////////////////////
@@ -1066,6 +1099,33 @@ footer {
         padding: 10px 0;
         font-size: 2.5em;
         letter-spacing: 1.1px;
+      }
+    }
+  }
+
+  .counter-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+    .counter-item {
+      font-size: 2.5rem;
+      margin: 1em;
+      width: 200px;
+      color: #fff;
+      text-align: center;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.76);
+      .counter {
+        margin: 0.3em 0;
+        font-size: 4rem;
+      }
+      .counter-procent::after {
+        content: " %";
+      }
+      .counter-desc {
+        text-transform: uppercase;
+        font-size: 1.8rem;
       }
     }
   }

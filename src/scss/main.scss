@@ -236,11 +236,14 @@ body {
       justify-content: space-between;
       border-radius: 6px;
       box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.623);
-      transition: transform 0.3s;
 
       &--imgone {
         position: absolute;
         top: -126px;
+        transition: transform 0.3s;
+      }
+      &--imgone:hover {
+        transform: scale(0.9);
       }
       &--imgtwo {
         width: 100%;
@@ -251,8 +254,10 @@ body {
           object-fit: cover;
           border-top-left-radius: 8px;
           border-top-right-radius: 8px;
+          overflow: hidden;
         }
       }
+
       &--name {
         width: 100%;
         padding: 0.1em;
@@ -288,9 +293,6 @@ body {
       &--link:hover {
         color: gold;
       }
-    }
-    &__item:hover {
-      transform: translateY(20px);
     }
   }
 }

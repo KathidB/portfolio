@@ -1,0 +1,18 @@
+# PORTFOLIO
+
+My portfolio is a project written by me, which contains various types of functionality and is fully responsive.
+
+## Live Version
+
+https://kathidb.github.io/portfolio/
+
+## Wprowadzenie – cel projektu
+
+You can find a section on the website with my other projects written with HTML/CSS and JavaScript.
+<br>
+Some of the projects were written with a focus on using JS and are not necessarily fully responsive or pleasing to the eye.  
+I created the project with the idea of using the latest code and semantics.
+
+## Info
+
+The JS file contains comments briefly describing the functions and how they work.

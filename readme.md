@@ -15,4 +15,4 @@ I created the project with the idea of using the latest code and semantics.
 
 ## Info
 
-The JS file contains comments briefly describing the functions and how they work.
+The JS file contains comments that briefly describe the functions it contains and how they work.

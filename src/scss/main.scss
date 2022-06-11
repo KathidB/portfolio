@@ -396,7 +396,7 @@ body {
       width: 250px;
       margin: 0 50px;
       border-radius: 15px;
-      background-color: transparent;
+      // background-color: none;
       transition: transform 0.3s;
       .img-head {
         width: 150px;
@@ -411,6 +411,7 @@ body {
       }
       h2,
       h3 {
+        color: white;
         font-size: 2.2rem;
         text-shadow: 1px 1px 1px rgb(0, 0, 0);
       }
@@ -984,6 +985,7 @@ footer {
       flex-wrap: wrap;
       flex: 576px;
       &--left {
+        order: 2;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -999,6 +1001,7 @@ footer {
         }
       }
       &--right {
+        order: 1;
         padding-top: 10px;
         flex: 50%;
         img {

@@ -1,4 +1,5 @@
 // wyłącza na mobile animacje od AOS
+//podyktowanie większym wynikiem w Lighthouse.
 AOS.init({ disable: "mobile" });
 /////////////////////////////////////////////////////////////
 // hamburger menu
@@ -19,7 +20,7 @@ const menuActivation = () => {
 
 hamburgerBtn.addEventListener("click", menuActivation);
 
-//funckja odpowiada za klikniecie w element z listy menu i zamkniecie menu po akcji na click.
+//funckja odpowiada za zamkniecie menu po akcji na click.
 document.querySelectorAll(".nav-menu-ham__item").forEach((el) => {
   el.addEventListener("click", () => {
     hamburgerBtn.classList.toggle("active");
@@ -69,7 +70,7 @@ const observer = new IntersectionObserver(startCounter, options);
 observer.observe(counterBox);
 
 /////////////////////////////////////////////////////////////
-// funkcja nadanie cienia na menu w trakcie przesuwania strony.
+// funkcja nadaje cień na menu w trakcie scrollowania strony.
 /////////////////////////////////////////////////////////////
 window.onscroll = () => {
   if (window.scrollY >= 100) {

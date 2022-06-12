@@ -2,7 +2,7 @@
 //podyktowanie większym wynikiem w Lighthouse.
 AOS.init({ disable: "mobile" });
 
-///////////////////// hamburger menu //////////////////////////////////////////
+//////////////// hamburger menu ////////////////////////////////////
 const hamburgerBtn = document.querySelector(".hamburger");
 const hamMenu = document.querySelector(".nav-menu-ham");
 const menuNav = document.querySelector(".nav");
@@ -27,7 +27,7 @@ document.querySelectorAll(".nav-menu-ham__item").forEach((el) => {
   });
 });
 
-///////////////////////////funkcja counter box//////////////////////////////////
+///////////////////////////funkcja counter box/////////////////////////
 
 // dzieki tej wartości odliczanie nie zaczyna sie od razu na ikonkach
 //gdy scrollujemy w dól, a o 250px niżej,aby nie przegapić animacji.
@@ -35,19 +35,16 @@ const options = {
   rootMargin: "-150px",
 };
 
+//entry - sprawdzamy czy doscrollowalismy do countera.
+//do zmiennej finalnumber przypisujemy docelowa liczbę z countera w html
+//value - domyslnie mamy wpisane zero w stringu - dzieki temu bedzie to liczba.
+//speed - liczba nie moze być wyższa niż liczba podana w data-number w html!
 const startCounter = (entry) => {
-  //entry - sprawdzamy czy doscrollowalismy do countera.
   if (entry[0].isIntersecting) {
     counterItems.forEach((counter) => {
       const updateCounter = () => {
-        //do zmiennej finalnumber przypisujemy docelowa liczbę z countera w html
         const finalNumber = counter.getAttribute("data-number");
-
-        //domyslnie mamy wpisane zero w stringu - dzieki temu bedzie to liczba.
         const value = parseInt(counter.textContent);
-
-        //predkosc obliczania - liczba nie moze być wyższa niż liczba podana
-        //w data-number w html!
         const speed = finalNumber / 50;
 
         if (value < finalNumber) {
@@ -69,7 +66,6 @@ observer.observe(counterBox);
 
 /////////////////////////////////////////////////////////////
 // funkcja nadaje cień na menu w trakcie scrollowania strony.
-
 window.onscroll = () => {
   if (window.scrollY >= 100) {
     menuNav.classList.add("nav-bg");
@@ -77,6 +73,8 @@ window.onscroll = () => {
     menuNav.classList.remove("nav-bg");
   }
 };
+
+
 
 // footer
 const getCurrentYear = () => {

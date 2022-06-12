@@ -374,15 +374,13 @@ body {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     overflow: hidden;
-
-    .team-members {      width: 100%;
-   
+    .team-members {
+      width: 100%;
       display: inline-flex;
       justify-content: space-evenly;
       scroll-snap-align: start;
       flex: 0 0 100%;
       flex-wrap: wrap;
-    
     }
   }
 
@@ -392,7 +390,7 @@ body {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     overflow: hidden;
-    &__box {     
+    &__box {
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -401,8 +399,8 @@ body {
       width: 250px;
       margin: 0 50px;
       border-radius: 15px;
-      transition: transform 0.3s;
-      z-index: 10;
+      background-color: transparent;
+      transition: transform 0.3s;  
       .img-head {
         width: 150px;
         height: 150px;
@@ -702,7 +700,7 @@ footer {
     padding: 20px;
   }
   //header
-  .header {    
+  .header {
     padding: 0px;
     &__box {
       display: flex;
@@ -770,7 +768,6 @@ footer {
         }
       }
       &--text {
-       
         width: 95%;
         span {
           font-weight: bold;

@@ -10,8 +10,7 @@ https://kathidb.github.io/portfolio/
 
 You can find a section on the website with my other projects written with HTML/CSS and JavaScript.
 <br>
-Some of the projects were written with a focus on using JS and are not necessarily fully responsive or pleasing to the eye.  
-I created the project with the idea of using the latest code and semantics.
+Some of the projects were written with a focus on using JS and are not necessarily fully responsive or pleasing to the eye.
 
 ## Info
 

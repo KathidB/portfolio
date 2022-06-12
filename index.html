@@ -36,7 +36,7 @@
                 <div class="nav-logo">
                     <a class="nav-logo__item" href="#">Front-End</a>
                 </div>
-                <ul class="nav-menu">
+                <ol class="nav-menu">
                     <li><a href="#" class="nav-menu__item">Home</a></li>
                     <li><a href="#projects" class="nav-menu__item">Projekty</a>
                     </li>
@@ -45,13 +45,13 @@
                     <li> <a href="#team" class="nav-menu__item">Team</a>
                     </li>
                     <li> <a href="#contact" class="nav-menu__item">Kontakt</a></li>
-                </ul>
+                </ol>
                 <button class="hamburger" type="button" aria-label="hamburger menu">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
                 </button>
-                <ul class="nav-menu-ham move-menu">
+                <ol class="nav-menu-ham move-menu">
                     <li><a href="#" class="nav-menu-ham__item">Home</a></li>
                     <li><a href="#projects" class="nav-menu-ham__item">Projekty</a>
                     </li>
@@ -60,7 +60,7 @@
                     <li> <a href="#team" class="nav-menu-ham__item">Team</a>
                     </li>
                     <li> <a href="#contact" class="nav-menu-ham__item">Kontakt</a></li>
-                </ul>
+                </ol>
             </div>
         </div>
     </nav>
@@ -86,287 +86,295 @@
         </div>
     </header>
 
-    <section class="section projects" id="projects">
-        <div class="wrapper">
-            <p class="projects-header" data-aos="zoom-in-up" data-aos-duration="1000">Projekty</p>
-            <div class="projects-box">
-                <div class="projects-box__item" data-aos="zoom-in" data-aos-duration="1000">
-                    <img class="projects-box__item--imgone lazyload" data-src="./dist/img/projects/todolista.webp"
-                        alt="zdjęcie przedstawiające miniaturę mojego projektu todo list">
-                    <a class="projects-box__item--imgtwo" target="_blank" rel="noopener"
-                        href="https://kathidb.github.io/todolist/"> <img class="lazyload"
-                            data-src="./dist/img/todoshot.webp"
-                            alt="zdjęcie przedstawiające miniaturę mojego projektu "></a>
-                    <p class="projects-box__item--name">TO DO List</p>
-                    <p class="projects-box__item--description">Stworzona za pomocą HTML/CSS/JS. Zawiera
-                        klasyczne opcje CRUD. Zapraszam do zapoznania się ze szczegółami projektu.</p>
-                    <a class="projects-box__item--link" target="_blank" rel="noopener noreferrer"
-                        href="https://github.com/KathidB/todolist"><img class="lazyload"
-                            data-src="./dist/img/ghlogo.webp" width="20" height="20" alt="ikona githuba">Github</a>
-                </div>
-
-                <div class="projects-box__item" data-aos="zoom-in" data-aos-duration="1500">
-                    <img class="projects-box__item--imgone lazyload" data-src="./dist/img/projects/cryptotable.webp"
-                        alt="zdjęcie przedstawiające miniaturę mojego projektu top 100 kryptowalut">
-                    <a target="_blank" rel="noopener noreferrer" class="projects-box__item--imgtwo"
-                        href="https://kathidb.github.io/crypto/"> <img class="lazyload"
-                            data-src="./dist/img/topten.webp"
-                            alt="zdjęcie przedstawiające miniaturę mojego projektu "></a>
-                    <p class="projects-box__item--name">top 100 krypto API</p>
-                    <p class="projects-box__item--description"> Tabela, która pobiera dane dotyczące 10 największych
-                        kryptowalut za pomocą API. JavaScript wstawia je kolejno do odpowiednich pól. </p>
-                    <a class="projects-box__item--link" target="_blank" rel="noopener noreferrer"
-                        href="https://github.com/KathidB/crypto"><img class="lazyload" data-src="./dist/img/ghlogo.webp"
-                            width="20" height="20" alt="ikonka githuba">Github</a>
-                </div>
-
-
-                <div class="projects-box__item" data-aos="zoom-in" data-aos-duration="2000">
-                    <img class="projects-box__item--imgone lazyload" data-src="./dist/img/projects/weather.webp"
-                        alt="zdjęcie przedstawiające miniaturę mojego projektu ">
-                    <a target="_blank" rel="noopener noreferrer" class="projects-box__item--imgtwo"
-                        href="https://kathidb.github.io/weather-app/"> <img class="lazyload"
-                            data-src="./dist/img/weatherapp.webp"
-                            alt="zdjęcie przedstawiające miniaturę mojego projektu "></a>
-                    <p class="projects-box__item--name">Weather app</p>
-                    <p class="projects-box__item--description"> Aplikacja, która za pomocą API pobiera dane dotyczące
-                        pogody w wybranym mieście i
-                        przedstawia je w formie graficznej. </p>
-                    <a class="projects-box__item--link" target="_blank" rel="noopener noreferrer"
-                        href="https://github.com/KathidB/weather-app"><img class="lazyload"
-                            data-src="./dist/img/ghlogo.webp" width="20" height="20" alt="ikonka githuba">github</a>
-                </div>
-
-
-                <div class="projects-box__item" data-aos="zoom-in" data-aos-duration="2500">
-                    <img class="projects-box__item--imgone lazyload" src="./dist/img/projects/guess.webp"
-                        alt="zdjęcie przedstawiające miniaturę mojego projektu ">
-                    <a target="_blank" rel="noopener noreferrer" class="projects-box__item--imgtwo"
-                        href="https://kathidb.github.io/minigames/"> <img class="lazyload"
-                            data-src="./dist/img/projects/minigames.webp"
-                            alt="zdjęcie przedstawiające miniaturę mojego projektu "></a>
-                    <p class=" projects-box__item--name">MINI GAMES</p>
-                    <p class="projects-box__item--description">Zestawienie dwóch protych gier w JavaScripcie. Wsród
-                        nich
-                        znajdziemy
-                        kamień
-                        papier i nożycze oraz zgadnij liczbę z przedziału od 0 do 100.</p>
-                    <a class="projects-box__item--link" target="_blank" rel="noopener noreferrer"
-                        href="https://github.com/KathidB/minigames"><img class="lazyload"
-                            data-src="./dist/img/ghlogo.webp" width="20" height="20" alt="ikonka githuba">Github</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section aboutme" id="aboutme">
-        <div class="wrapper">
-            <p class="aboutme__header" data-aos="zoom-in-up" data-aos-duration="1000">O mnie</p>
-            <div class="aboutme__box">
-                <div class="aboutme__box--img">
-                    <img class="lazyload" data-src="./dist/img/ja.webp" width="660" height="540"
-                        alt="obrazek z programistą przy biurku" data-aos="zoom-in-up">
-
-                </div>
-                <div class="aboutme__box--text" data-aos="zoom-in">
-                    <p>Lubię wykonywać na komputerze rzeczy, które są sporym wyzwaniem i uważam, że bycie programistą
-                        jest jednym z nich. Obecnie poświęcam swój wolny czas na naukę <span>Front-Endu</span> i
-                        rozwijam swoje umiejętności wykonując pomniejsze projekty przy pomocy <span>HTML/CSS i
-                            JS</span>, z którego ten
-                        ostatni daje mi najwięcej przyjemności.</p>
-                    <p>Zespół, który zdecyduje się na przyjęcie mnie w swoje szeregi zyska bardzo zmotywowaną do
-                        działania i nauki osobę. <span>Front-End</span> posiada przede mną jeszcze wiele tajemnic ale
-                        starannie dążę do celu jakim jest przebranżowienie.
-                    </p>
-                    <p> W najbliższym czasie planuje wciaż udoskonalać moje umiejętności i niedługo rozpocząć naukę
-                        Reacta. Zdobycie doświadczenia komercyjnego byłoby dla mnie ogromną szansą na rózwój.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-    <section class="section team" id="team">
-        <div class="wrapper">
-            <div class="team-header">TEAM</div>
-            <div class="team-box">
-                <div class="team-members" id="team1">
-                    <div class="team__carousel__box  ">
-                        <img class="img-head lazyload" width="180" height="180" data-src="./dist/img/face0.webp"
-                            alt="prawcownik firmy">
-                        <h2>Jan Kowalski </h2>
-                        <h3>CEO</h3>
-                        <hr>
-                        <div class="social-media">
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/email.webp" alt="ikonka emaila" width="40" height="40"></a>
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/twitter.webp" alt="ikonka twittera" width="40" height="40"></a>
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/github.webp" alt="ikonka githuba" width="40" height="40"></a>
-                        </div>
+    <main>
+        <section class="section projects" id="projects">
+            <div class="wrapper">
+                <p class="projects-header" data-aos="zoom-in-up" data-aos-duration="1000">Projekty</p>
+                <div class="projects-box">
+                    <div class="projects-box__item" data-aos="zoom-in" data-aos-duration="1000">
+                        <img class="projects-box__item--imgone lazyload" data-src="./dist/img/projects/todolista.webp"
+                            alt="zdjęcie przedstawiające miniaturę mojego projektu todo list">
+                        <a class="projects-box__item--imgtwo" target="_blank" rel="noopener"
+                            href="https://kathidb.github.io/todolist/"> <img class="lazyload"
+                                data-src="./dist/img/todoshot.webp"
+                                alt="zdjęcie przedstawiające miniaturę mojego projektu "></a>
+                        <p class="projects-box__item--name">TO DO List</p>
+                        <p class="projects-box__item--description">Stworzona za pomocą HTML/CSS/JS. Zawiera
+                            klasyczne opcje CRUD. Zapraszam do zapoznania się ze szczegółami projektu.</p>
+                        <a class="projects-box__item--link" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/KathidB/todolist"><img class="lazyload"
+                                data-src="./dist/img/ghlogo.webp" width="20" height="20" alt="ikona githuba">Github</a>
                     </div>
-                    <div class="team__carousel__box">
-                        <img class="img-head lazyload" width="180" height="180" data-src="./dist/img/face1.webp"
-                            alt="prawcownik firmy">
-                        <h2>Monique Parke </h2>
-                        <h3>Front-End</h3>
-                        <hr>
-                        <div class="social-media">
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/email.webp" alt="ikonka emaila" width="40" height="40"></a>
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/github.webp" alt="ikonka githuba" width="40" height="40"></a>
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/twitter.webp" alt="ikonka twittera" width="40" height="40"></a>
-                        </div>
-                    </div>
-                    <div class="team__carousel__box">
-                        <img class="img-head lazyload" width="180" height="180" data-src="./dist/img/face2.webp"
-                            alt="prawcownik firmy">
-                        <h2>Anna Livingstone</h2>
-                        <h3>Backend</h3>
-                        <hr>
-                        <div class="social-media">
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/email.webp" alt="ikonka emaila" width="40" height="40"></a>
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/github.webp" alt="ikonka githuba" width="40" height="40"></a>
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/twitter.webp" alt="ikonka twittera" width="40" height="40"></a>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="team-members" id="team2">
-                    <div class="team__carousel__box">
-                        <img class="img-head lazyload" width="180" height="180" data-src="./dist/img/face3.webp"
-                            alt="prawcownik firmy">
-                        <h2>Tomasz Morales</h2>
-                        <h3>HR</h3>
-                        <hr>
-                        <div class="social-media">
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/email.webp" alt="ikonka emaila" width="40" height="40"></a>
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/github.webp" alt="ikonka githuba" width="40" height="40"></a>
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/twitter.webp" alt="ikonka twittera" width="40" height="40"></a>
-                        </div>
+                    <div class="projects-box__item" data-aos="zoom-in" data-aos-duration="1500">
+                        <img class="projects-box__item--imgone lazyload" data-src="./dist/img/projects/cryptotable.webp"
+                            alt="zdjęcie przedstawiające miniaturę mojego projektu top 100 kryptowalut">
+                        <a target="_blank" rel="noopener noreferrer" class="projects-box__item--imgtwo"
+                            href="https://kathidb.github.io/crypto/"> <img class="lazyload"
+                                data-src="./dist/img/topten.webp"
+                                alt="zdjęcie przedstawiające miniaturę mojego projektu "></a>
+                        <p class="projects-box__item--name">top 100 krypto API</p>
+                        <p class="projects-box__item--description"> Tabela, która pobiera dane dotyczące 10 największych
+                            kryptowalut za pomocą API. JavaScript wstawia je kolejno do odpowiednich pól. </p>
+                        <a class="projects-box__item--link" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/KathidB/crypto"><img class="lazyload"
+                                data-src="./dist/img/ghlogo.webp" width="20" height="20" alt="ikonka githuba">Github</a>
                     </div>
-                    <div class="team__carousel__box">
-                        <img class="img-head lazyload" width="180" height="180" data-src="./dist/img/face4.webp"
-                            alt="prawcownik firmy">
-                        <h2>Angela Smith </h2>
-                        <h3>Backend</h3>
-                        <hr>
-                        <div class="social-media">
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/email.webp" alt="ikonka emaila" width="40" height="40"></a>
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/github.webp" alt="ikonka githuba" width="40" height="40"></a>
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/twitter.webp" alt="ikonka twittera" width="40" height="40"></a>
-                        </div>
+
+
+                    <div class="projects-box__item" data-aos="zoom-in" data-aos-duration="2000">
+                        <img class="projects-box__item--imgone lazyload" data-src="./dist/img/projects/weather.webp"
+                            alt="zdjęcie przedstawiające miniaturę mojego projektu ">
+                        <a target="_blank" rel="noopener noreferrer" class="projects-box__item--imgtwo"
+                            href="https://kathidb.github.io/weather-app/"> <img class="lazyload"
+                                data-src="./dist/img/weatherapp.webp"
+                                alt="zdjęcie przedstawiające miniaturę mojego projektu "></a>
+                        <p class="projects-box__item--name">Weather app</p>
+                        <p class="projects-box__item--description"> Aplikacja, która za pomocą API pobiera dane
+                            dotyczące
+                            pogody w wybranym mieście i
+                            przedstawia je w formie graficznej. </p>
+                        <a class="projects-box__item--link" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/KathidB/weather-app"><img class="lazyload"
+                                data-src="./dist/img/ghlogo.webp" width="20" height="20" alt="ikonka githuba">github</a>
                     </div>
-                    <div class="team__carousel__box">
-                        <img class="img-head lazyload" width="180" height="180" data-src="./dist/img/face5.webp"
-                            alt="prawcownik firmy">
-                        <h2>Tamara Kowalska</h2>
-                        <h3>Blockchain</h3>
-                        <hr>
-                        <div class="social-media">
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/email.webp" alt="ikonka emaila" width="40" height="40"></a>
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/github.webp" alt="ikonka githuba" width="40" height="40"></a>
-                            <a href="#" aria-label="social media link"><img class="lazyload"
-                                    data-src="./dist/img/twitter.webp" alt="ikonka twittera" width="40" height="40"></a>
-                        </div>
+
+
+                    <div class="projects-box__item" data-aos="zoom-in" data-aos-duration="2500">
+                        <img class="projects-box__item--imgone lazyload" src="./dist/img/projects/guess.webp"
+                            alt="zdjęcie przedstawiające miniaturę mojego projektu ">
+                        <a target="_blank" rel="noopener noreferrer" class="projects-box__item--imgtwo"
+                            href="https://kathidb.github.io/minigames/"> <img class="lazyload"
+                                data-src="./dist/img/projects/minigames.webp"
+                                alt="zdjęcie przedstawiające miniaturę mojego projektu "></a>
+                        <p class=" projects-box__item--name">MINI GAMES</p>
+                        <p class="projects-box__item--description">Zestawienie dwóch protych gier w JavaScripcie. Wsród
+                            nich
+                            znajdziemy
+                            kamień
+                            papier i nożycze oraz zgadnij liczbę z przedziału od 0 do 100.</p>
+                        <a class="projects-box__item--link" target="_blank" rel="noopener noreferrer"
+                            href="https://github.com/KathidB/minigames"><img class="lazyload"
+                                data-src="./dist/img/ghlogo.webp" width="20" height="20" alt="ikonka githuba">Github</a>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="team__links">
-                <a href="#team1" aria-label="team carousel button left">
-                    <div class="dot"></div>
-                </a>
-                <a href="#team2" aria-label="team carousel button right">
-                    <div class="dot"></div>
+        <section class="section aboutme" id="aboutme">
+            <div class="wrapper">
+                <p class="aboutme__header" data-aos="zoom-in-up" data-aos-duration="1000">O mnie</p>
+                <div class="aboutme__box">
+                    <div class="aboutme__box--img">
+                        <img class="lazyload" data-src="./dist/img/ja.webp" width="660" height="540"
+                            alt="obrazek z programistą przy biurku" data-aos="zoom-in-up">
 
-                </a>
-
-            </div>
-
-            <!-- COUNTER - LICZNIK KLIENTÓW ITP -->
-            <div class="counter-box">
-                <div class="counter-item">
-                    <img class="lazyload" data-src="./dist/img/Cclients.webp" alt="ikonka klient" width="100"
-                        height="100">
-                    <div class="counter" data-number="135">0</div>
-                    <p class="counter-desc">klientów</p>
-                </div>
-
-                <div class="counter-item">
-                    <img class="lazyload" data-src="./dist/img/Cprojects.webp" alt="ikonka klient" width="100"
-                        height="100">
-                    <div class="counter" data-number="210">0</div>
-                    <p class="counter-desc">projektów</p>
-                </div>
-
-                <div class="counter-item">
-                    <img class="lazyload" src="./dist/img/Copinions.webp" alt="ikonka klient" width="100" height="100">
-                    <div class="counter counter-procent" data-number="96">0</div>
-                    <p class="counter-desc">pozytywnych opinii</p>
+                    </div>
+                    <div class="aboutme__box--text" data-aos="zoom-in">
+                        <p>Lubię wykonywać na komputerze rzeczy, które są sporym wyzwaniem i uważam, że bycie
+                            programistą
+                            jest jednym z nich. Obecnie poświęcam swój wolny czas na naukę <span>Front-Endu</span> i
+                            rozwijam swoje umiejętności wykonując pomniejsze projekty przy pomocy <span>HTML/CSS i
+                                JS</span>, z którego ten
+                            ostatni daje mi najwięcej przyjemności.</p>
+                        <p>Zespół, który zdecyduje się na przyjęcie mnie w swoje szeregi zyska bardzo zmotywowaną do
+                            działania i nauki osobę. <span>Front-End</span> posiada przede mną jeszcze wiele tajemnic
+                            ale
+                            starannie dążę do celu jakim jest przebranżowienie.
+                        </p>
+                        <p> W najbliższym czasie planuje wciaż udoskonalać moje umiejętności i niedługo rozpocząć naukę
+                            Reacta. Zdobycie doświadczenia komercyjnego byłoby dla mnie ogromną szansą na rózwój.</p>
+                    </div>
                 </div>
             </div>
+        </section>
 
 
 
 
 
 
-        </div>
 
+        <section class="section team" id="team">
+            <div class="wrapper">
+                <div class="team-header">TEAM</div>
+                <div class="team-box">
+                    <div class="team-members" id="team1">
+                        <div class="team__carousel__box  ">
+                            <img class="img-head lazyload" width="180" height="180" data-src="./dist/img/face0.webp"
+                                alt="prawcownik firmy">
+                            <h2>Jan Kowalski </h2>
+                            <h3>CEO</h3>
+                            <hr>
+                            <div class="social-media">
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/email.webp" alt="ikonka emaila" width="40" height="40"></a>
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/twitter.webp" alt="ikonka twittera" width="40"
+                                        height="40"></a>
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/github.webp" alt="ikonka githuba" width="40"
+                                        height="40"></a>
+                            </div>
+                        </div>
+                        <div class="team__carousel__box">
+                            <img class="img-head lazyload" width="180" height="180" data-src="./dist/img/face1.webp"
+                                alt="prawcownik firmy">
+                            <h2>Monique Parke </h2>
+                            <h3>Front-End</h3>
+                            <hr>
+                            <div class="social-media">
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/email.webp" alt="ikonka emaila" width="40" height="40"></a>
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/github.webp" alt="ikonka githuba" width="40"
+                                        height="40"></a>
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/twitter.webp" alt="ikonka twittera" width="40"
+                                        height="40"></a>
+                            </div>
+                        </div>
+                        <div class="team__carousel__box">
+                            <img class="img-head lazyload" width="180" height="180" data-src="./dist/img/face2.webp"
+                                alt="prawcownik firmy">
+                            <h2>Anna Livingstone</h2>
+                            <h3>Backend</h3>
+                            <hr>
+                            <div class="social-media">
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/email.webp" alt="ikonka emaila" width="40" height="40"></a>
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/github.webp" alt="ikonka githuba" width="40"
+                                        height="40"></a>
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/twitter.webp" alt="ikonka twittera" width="40"
+                                        height="40"></a>
+                            </div>
+                        </div>
+                    </div>
 
-
-
-
-    </section>
-
-
-
-
-
-    <section class="section contact" id="contact" data-aos="zoom-in-down">
-        <div class="wrapper">
-            <div class="contact__box">
-                <div class="contact__box__para">
-                    <p>kontakt</p>
+                    <div class="team-members" id="team2">
+                        <div class="team__carousel__box">
+                            <img class="img-head lazyload" width="180" height="180" data-src="./dist/img/face3.webp"
+                                alt="prawcownik firmy">
+                            <h2>Tomasz Morales</h2>
+                            <h3>HR</h3>
+                            <hr>
+                            <div class="social-media">
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/email.webp" alt="ikonka emaila" width="40" height="40"></a>
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/github.webp" alt="ikonka githuba" width="40"
+                                        height="40"></a>
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/twitter.webp" alt="ikonka twittera" width="40"
+                                        height="40"></a>
+                            </div>
+                        </div>
+                        <div class="team__carousel__box">
+                            <img class="img-head lazyload" width="180" height="180" data-src="./dist/img/face4.webp"
+                                alt="prawcownik firmy">
+                            <h2>Angela Smith </h2>
+                            <h3>Backend</h3>
+                            <hr>
+                            <div class="social-media">
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/email.webp" alt="ikonka emaila" width="40" height="40"></a>
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/github.webp" alt="ikonka githuba" width="40"
+                                        height="40"></a>
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/twitter.webp" alt="ikonka twittera" width="40"
+                                        height="40"></a>
+                            </div>
+                        </div>
+                        <div class="team__carousel__box">
+                            <img class="img-head lazyload" width="180" height="180" data-src="./dist/img/face5.webp"
+                                alt="prawcownik firmy">
+                            <h2>Tamara Kowalska</h2>
+                            <h3>Blockchain</h3>
+                            <hr>
+                            <div class="social-media">
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/email.webp" alt="ikonka emaila" width="40" height="40"></a>
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/github.webp" alt="ikonka githuba" width="40"
+                                        height="40"></a>
+                                <a href="#" aria-label="social media link"><img class="lazyload"
+                                        data-src="./dist/img/twitter.webp" alt="ikonka twittera" width="40"
+                                        height="40"></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact__box__info">
-                    <ul>
-                        <li>
-                            <img class="lazyload" data-src="./dist/img/1.webp" alt="ikona email">
-                            <a href="mailto:kathidbb@gmail.com" target="_blank" rel="noopener">kathidbb@gmail.com</a>
-                        </li>
-                        <li>
-                            <img class="lazyload" data-src="./dist/img/2.webp" alt="ikona github">
-                            <a href="https://github.com/KathidB" target="_blank" rel="noopener"
-                                aria-label="github link">
-                                github.com/KathidB</a>
-                        </li>
-                    </ul>
+
+                <div class="team__links">
+                    <a href="#team1" aria-label="team carousel button left">
+                        <div class="dot"></div>
+                    </a>
+                    <a href="#team2" aria-label="team carousel button right">
+                        <div class="dot"></div>
+
+                    </a>
+
+                </div>
+
+                <!-- COUNTER - LICZNIK KLIENTÓW ITP -->
+                <div class="counter-box">
+                    <div class="counter-item">
+                        <img class="lazyload" data-src="./dist/img/Cclients.webp" alt="ikonka klient" width="100"
+                            height="100">
+                        <div class="counter" data-number="135">0</div>
+                        <p class="counter-desc">klientów</p>
+                    </div>
+
+                    <div class="counter-item">
+                        <img class="lazyload" data-src="./dist/img/Cprojects.webp" alt="ikonka klient" width="100"
+                            height="100">
+                        <div class="counter" data-number="210">0</div>
+                        <p class="counter-desc">projektów</p>
+                    </div>
+
+                    <div class="counter-item">
+                        <img class="lazyload" src="./dist/img/Copinions.webp" alt="ikonka klient" width="100"
+                            height="100">
+                        <div class="counter counter-procent" data-number="96">0</div>
+                        <p class="counter-desc">pozytywnych opinii</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+
+
+
+
+        <section class="section contact" id="contact" data-aos="zoom-in-down">
+            <div class="wrapper">
+                <div class="contact__box">
+                    <div class="contact__box__para">
+                        <p>kontakt</p>
+                    </div>
+                    <div class="contact__box__info">
+                        <ol>
+                            <li>
+                                <img class="lazyload" data-src="./dist/img/1.webp" alt="ikona email">
+                                <a href="mailto:kathidbb@gmail.com" target="_blank"
+                                    rel="noopener">kathidbb@gmail.com</a>
+                            </li>
+                            <li>
+                                <img class="lazyload" data-src="./dist/img/2.webp" alt="ikona github">
+                                <a href="https://github.com/KathidB" target="_blank" rel="noopener"
+                                    aria-label="github link">
+                                    github.com/KathidB</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 
 

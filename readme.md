@@ -1,6 +1,8 @@
 # PORTFOLIO
 
-My portfolio is a project written by me, which contains various types of functionality and is fully responsive.
+My portfolio was written using HTML/CSS and vanilla JS.
+<br>It has various basic functionalities often found on websites and a section with projects written using JavaScript.
+<br> Some of these projects are not focused on visual aspects and only focus on JS code.
 
 ## Live Version
 

@@ -1,3 +1,5 @@
+@import "colors";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -32,7 +34,7 @@ body {
   background: -webkit-linear-gradient(to bottom, #1d2671, #c33764);
   background: linear-gradient(to bottom, #1d2671, #c33764);
   font-family: "Plus Jakarta Sans", sans-serif;
-  color: white;
+  color: $white;
 }
 .hide {
   display: none;
@@ -41,8 +43,8 @@ body {
 //NAVIGATION
 
 .nav {
-  position: fixed;
   display: flex;
+  position: fixed;
   width: 100%;
   height: 70px;
   z-index: 5;
@@ -54,13 +56,13 @@ body {
     font-size: 3rem;
     .nav-logo {
       &__item {
-        color: white;
+        color: $white;
         text-decoration: none;
         font-weight: bold;
         transition: color 0.3s;
       }
       &__item:hover {
-        color: gold;
+        color: $gold;
       }
     }
     .nav-menu {
@@ -72,12 +74,12 @@ body {
         font-weight: bold;
         text-decoration: none;
         letter-spacing: 1.1px;
-        text-shadow: 1px 1px 5px black;
+        text-shadow: 1px 1px 5px $black;
         color: rgb(255, 255, 255);
         transition: color 0.3s;
       }
       &__item:hover {
-        color: gold;
+        color: $gold;
       }
     }
     .hamburger {
@@ -92,7 +94,7 @@ body {
       display: block;
       width: 40px;
       height: 3px;
-      background-color: white;
+      background-color: $white;
       margin-block: 10px;
       border-radius: 4px;
       transition: transform 0.5s, opacity 0.25s;
@@ -125,8 +127,8 @@ body {
       }
       &__item {
         text-decoration: none;
-        color: white;
-        text-shadow: 5px 5px 10px black;
+        color: $white;
+        text-shadow: 5px 5px 10px $black;
       }
       .nav-ham-li:hover {
         width: 100%;
@@ -152,7 +154,7 @@ body {
       .headers {
         padding: 30px 0;
         span {
-          color: gold;
+          color: $gold;
         }
       }
       h2,
@@ -168,8 +170,8 @@ body {
         text-decoration: none;
         text-transform: uppercase;
         letter-spacing: 2px;
-        color: #fff;
-        outline: 2px solid #fff;
+        color: $white;
+        outline: 2px solid $white;
         font-size: 2rem;
         font-weight: bold;
         transition: color 1s, outline 1s;
@@ -177,7 +179,7 @@ body {
       }
 
       .project-btn:hover {
-        color: rgb(255, 255, 255);
+        color: $white;
       }
 
       .project-btn::before {
@@ -264,7 +266,7 @@ body {
         text-align: center;
         font-weight: bold;
         background-color: #00000017;
-        text-shadow: 1px 1px 1px black;
+        text-shadow: 1px 1px 1px $black;
       }
       &--description {
         padding: 5px 5px;
@@ -289,7 +291,7 @@ body {
         }
       }
       &--link:hover {
-        color: gold;
+        color: $gold;
       }
     }
   }
@@ -365,8 +367,8 @@ body {
     }
   }
   .team-box {
-    width: 100%;
     display: flex;
+    width: 100%;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     overflow: hidden;
@@ -381,8 +383,8 @@ body {
   }
 
   &__carousel {
-    width: 100%;
     display: flex;
+    width: 100%;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     overflow: hidden;
@@ -408,8 +410,9 @@ body {
         width: 100%;
         border: 1px solid rgba(255, 255, 255, 0.753);
       }
-     h2, h3 {
-        color: white;
+      h2,
+      h3 {
+        color: $white;
         font-size: 2.2rem;
         text-shadow: 1px 1px 1px rgb(0, 0, 0);
       }
@@ -417,8 +420,8 @@ body {
         font-size: 1.8rem;
       }
       .social-media {
-        width: 80%;
         display: flex;
+        width: 80%;
         align-items: center;
         justify-content: space-around;
         img {
@@ -471,14 +474,14 @@ body {
           padding: 10px 20px;
 
           a {
-            color: white;
+            color: $white;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 2em;
             padding: 10px 20px;
           }
           a:hover {
-            color: silver;
+            color: $silver;
           }
         }
       }
@@ -512,7 +515,7 @@ footer {
     font-size: 2.5rem;
     margin: 1em;
     width: 200px;
-    color: #fff;
+    color: $white;
     text-align: center;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.76);
     .counter {
@@ -601,7 +604,7 @@ footer {
         width: 50%;
         span {
           font-weight: bold;
-          color: gold;
+          color: $gold;
         }
         p {
           padding: 20px;
@@ -680,7 +683,7 @@ footer {
       &--text {
         span {
           font-weight: bold;
-          color: gold;
+          color: $gold;
         }
         p {
           padding: 20px;
@@ -766,7 +769,7 @@ footer {
         width: 95%;
         span {
           font-weight: bold;
-          color: gold;
+          color: $gold;
         }
         p {
           padding: 20px;
@@ -775,10 +778,10 @@ footer {
     }
   }
   .contact {
-    margin: 0 auto;
-    width: 95%;
     display: flex;
     flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
     align-items: center;
     &__box {
       flex-direction: column;
@@ -842,13 +845,13 @@ footer {
       flex-wrap: wrap;
       flex: 576px;
       &--left {
-        text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-self: center;
         flex: 50%;
         padding: 10px;
+        text-align: center;
         font-size: 1.8rem;
         text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.295);
         h2,
@@ -902,7 +905,7 @@ footer {
         width: 95%;
         span {
           font-weight: bold;
-          color: gold;
+          color: $gold;
         }
         p {
           padding: 20px;
@@ -919,9 +922,9 @@ footer {
   }
 
   .contact {
-    margin: 0 auto;
-    width: 95%;
     display: flex;
+    width: 95%;
+    margin: 0 auto;
     flex-direction: column;
     align-items: center;
     &__box {
@@ -989,9 +992,9 @@ footer {
       flex-wrap: wrap;
       flex: 576px;
       &--left {
+        display: flex;
         order: 2;
         text-align: center;
-        display: flex;
         flex-direction: column;
         align-items: center;
         justify-self: center;
@@ -1065,7 +1068,7 @@ footer {
         width: 90%;
         span {
           font-weight: bold;
-          color: gold;
+          color: $gold;
         }
         p {
           padding: 20px 0;
@@ -1075,9 +1078,9 @@ footer {
   }
   // CONTACT
   .contact {
+    display: flex;
     margin: 0 auto;
     width: 95%;
-    display: flex;
     flex-direction: column;
     align-items: center;
     &__box {
@@ -1118,7 +1121,7 @@ footer {
       font-size: 2.5rem;
       margin: 1em;
       width: 200px;
-      color: #fff;
+      color: $white;
       text-align: center;
       text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.76);
       .counter {

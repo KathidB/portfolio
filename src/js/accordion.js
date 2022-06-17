@@ -2,7 +2,6 @@ const accordion = document.querySelector(".accordion");
 const accordionBtns = document.querySelectorAll(".accordion-btn");
 
 function openAccordionItems() {
-  console.log(this);
   if (this.nextElementSibling.classList.contains("active-accordion")) {
     this.nextElementSibling.classList.remove("active-accordion");
   } else {

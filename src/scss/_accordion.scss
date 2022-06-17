@@ -17,7 +17,7 @@
     margin: 20px;
     .accordion-btn {
       width: 100%;
-      padding: 1em;
+      padding: 10px;
       font-size: 2rem;
       text-align: left;
       border: none;
@@ -31,7 +31,7 @@
     }
     .accordion-btn:hover,
     .accordion-btn:focus {
-      background-color: #f6483bc0;
+      background-color: #f5bf2a57;
       color: $white;
       outline: none;
     }
@@ -48,7 +48,7 @@
   display: block;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .accordion {
     width: 100%;
   }

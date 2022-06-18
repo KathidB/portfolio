@@ -1,7 +1,6 @@
 // wyłącza na mobile animacje od AOS
 AOS.init({ disable: "mobile" });
 
-//////////////// hamburger menu ////////////////////////////////////
 const hamburgerBtn = document.querySelector(".hamburger");
 const hamMenu = document.querySelector(".nav-menu-ham");
 const menuNav = document.querySelector(".nav");
@@ -18,7 +17,7 @@ const menuActivation = () => {
 
 hamburgerBtn.addEventListener("click", menuActivation);
 
-///////////////////////////funkcja counter box/////////////////////////
+///funkcja counter box
 // dzieki tej wartości odliczanie nie zaczyna sie od razu na ikonkach
 //gdy scrollujemy w dól, a o 250px niżej,aby nie przegapić animacji.
 

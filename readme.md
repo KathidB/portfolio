@@ -2,8 +2,9 @@
 
 Moje portfolio zostało napisane za pomocą HTML/CSS i vanilla JS. Zawiera krótkie informacje o mnie,<br>
 a także zawiera demonstracyjne funkcjonalności oraz kilka projektów, z którymi można zapoznać się
-<br> na moich pozostałch repozytoriach na GitHubie.
-Portfolio jest responsywne. Kod jest semantyczny.
+<br> na moich pozostałch repozytoriach na GitHubie. Portfolio jest projektem samo w sobie. 
+Portfolio jest responsywne. Kod jest semantyczny. Z czasem staram się udoskonalać kod <br>
+i dodawać nowe funkcjonalności. 
 
 ## Live Version
 

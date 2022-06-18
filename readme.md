@@ -2,14 +2,12 @@
 
 Moje portfolio zostało napisane za pomocą HTML/CSS i vanilla JS. Zawiera krótkie informacje o mnie,<br>
 a także zawiera demonstracyjne funkcjonalności oraz kilka projektów, z którymi można zapoznać się
-<br> na moimw moich pozostałch repozytoriach na GitHubie.
+<br> na moich pozostałch repozytoriach na GitHubie.
 Portfolio jest responsywne. Kod jest semantyczny.
 
 ## Live Version
 
 https://kathidb.github.io/portfolio/
-
-## Wprowadzenie – cel projektu
 
 ## Info
 

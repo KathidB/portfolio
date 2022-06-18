@@ -6,6 +6,8 @@ a także demonstracyjne funkcjonalności oraz kilka projektów, z którymi możn
 <br> Strona jest responsywna. <br>Kod jest semantyczny.
 Z czasem staram się udoskonalać kod i dodawać nowe funkcjonalności. 
 
+Plik JS zawiera komentarze dotyczące opisu funkcji i sposobu ich działania.
+
 ## Live Version
 
 https://kathidb.github.io/portfolio/

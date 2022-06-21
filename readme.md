@@ -1,10 +1,11 @@
-# PORTFOLIO
+# Portfolio Junior Front-End Developer
 
 Moje portfolio zostało napisane za pomocą HTML/CSS i vanilla JS. Zawiera krótkie informacje o mnie,<br>
-a także demonstracyjne funkcjonalności oraz kilka projektów (portfolio jest jednym z nich), z którymi można zapoznać się
-<br> na moich pozostałch repozytoriach na GitHubie. 
-<br> Strona jest responsywna. <br>Kod jest semantyczny.
-Z czasem staram się udoskonalać kod i dodawać nowe funkcjonalności. 
+a także demonstracyjne funkcjonalności oraz kilka projektów, z którymi można zapoznać się
+<br> na moich pozostałych repozytoriach. 
+<br>
+Z czasem staram się udoskonalać kod i dodawać nowe funkcjonalności zarówno w moim portfolio jak i w pozostałych projektach
+. 
 
 Plik JS zawiera komentarze dotyczące opisu funkcji i sposobu ich działania.
 

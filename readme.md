@@ -1,4 +1,4 @@
-# PORTFOLIO
+# Portfolio Junior Front-End Developer
 
 Moje portfolio zostało napisane za pomocą HTML/CSS i vanilla JS. Zawiera krótkie informacje o mnie,<br>
 a także demonstracyjne funkcjonalności oraz kilka projektów, z którymi można zapoznać się

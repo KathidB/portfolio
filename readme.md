@@ -11,7 +11,8 @@ Plik JS zawiera komentarze dotyczące opisu funkcji i sposobu ich działania.
 
 ## Live Version
 
-https://kathidb.github.io/portfolio/
+Not updated
+// https://kathidb.github.io/portfolio/
 
 ## Info
 
